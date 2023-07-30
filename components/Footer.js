@@ -44,7 +44,7 @@ const Footer = () => {
             </h4>
             <div>
               <div className="text-white ">
-                Kitengela : Egerton university, <br /> njoro, main campus <br />
+                Kitengela : Milele center
                 PinCode: 131103
               </div>
               <div className="flex flex-col">

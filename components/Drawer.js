@@ -86,7 +86,7 @@ export default function TemporaryDrawer() {
       {["bottom"].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button
-            onClick={toggleDrawer(anchor, true)}
+            // onClick={toggleDrawer(anchor, true)}
             className="xxs:visible md:invisible lg:invisible"
           >
             <Image

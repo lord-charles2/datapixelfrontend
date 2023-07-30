@@ -156,7 +156,7 @@ export default function NestedModal({ open, setOpen, data }) {
 
           <div className="flex space-x-1">
             <p id="parent-modal-description" className="text-black">
-              Purchase {data.bandwidth}({data.speed}Mbps) valid for{" "}
+              Purchase {data.bandwidth} valid for{" "}
               {data.validity} at Ksh{data.price}
             </p>
           </div>
