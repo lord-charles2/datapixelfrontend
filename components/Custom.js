@@ -69,7 +69,6 @@ const Custom = () => {
                 />
                 <p className="text-black font-serif">Up to</p>
                 <p className="text-[16px] font-serif text-purple-600 text-center font-bold">
-                  {item.period === "Unlimited" ? "50Gb" : item.period} for{" "}
                   {item.validity === "hour"
                     ? "1hour"
                     : item.validity === "3hour"
