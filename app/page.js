@@ -84,7 +84,7 @@ const Home = () => {
       <TidioChat />
 
       <Hero />
-      <Packages />
+      {/* <Packages /> */}
       <Custom />
       <div className="py-4 bg-gray-100">
         <div className=" lg:mx-[320px] md:-[10px]">

@@ -1,10 +1,12 @@
 "use client";
 import { packages2 } from "@/utils/data";
-import { Button } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import NestedModal from "./modal";
 import { useState } from "react";
+import Link from "next/link";
+import Marquee from "react-fast-marquee";
 
 const Custom = () => {
   const [open, setOpen] = useState(false);
@@ -27,10 +29,29 @@ const Custom = () => {
     <div className="bg-gray-100 overflow-hidden w-screen">
       <NestedModal setOpen={setOpen} open={open} data={data} />
 
-      <div className="lg:mx-[300px] md:mx-[10px] relative top-[20px]">
-        <p className="text-black text-[28px] font-serif font-bold text-center ">
-          Get more customized packages from us.
+      <div className="lg:mx-[300px] md:mx-[10px] relative top-[0px]">
+      <div className="lg:mx-[600px] md:mx-[0px]">
+        <Marquee className="text-purple-500 text-[13px]" speed={55}>
+          {"  "}
+          {`If your voucher has not been received via SMS from senderID TextSMS | 23107 | AdvantaSMS within 10min, we kindly request that you promptly contact 0723926304 to obtain your voucher immediately. For any other inquiries, please feel free to
+          reach out to 0713409806, Thank you.`}
+        </Marquee>
+      </div>
+
+        <p className="text-black text-center pt-1 font-serif text-[14px]">
+          Prefer to order by phone? <a href="#">0723926304 | 0713409806.</a>
         </p>
+
+        <div className="flex justify-center relative top-1">
+          <IconButton className="rounded-md">
+            <Link
+              href={"http://charles.net/login"}
+              className="text-green-500 text-[25px] font-bold font-serif border border-green-600 py-1 px-2 rounded-md animate-pulse shadow-sm shadow-green-500"
+            >
+              Connect now
+            </Link>
+          </IconButton>
+        </div>
 
         <div className="grid   md:grid-cols-3 lg:grid-cols-3 xxs:grid-cols-2 place-items-center mt-6">
           {packages2.map((item, index) => {
