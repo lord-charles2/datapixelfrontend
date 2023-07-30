@@ -110,7 +110,7 @@ export const packages2 = [
     streaming: "1080p",
     images: "/images2/wave1.svg",
     validity: "12hour",
-    id: 77,
+    id: 70,
   },
   {
     speed: "5",
