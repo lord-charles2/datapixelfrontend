@@ -75,7 +75,7 @@ export const packages2 = [
     shared: true,
     period: "Unlimited",
     images: "/images2/wave1.svg",
-    validity: "1hour 45minutes",
+    validity: "1hour 45min",
     id: 189,
   },
   {
